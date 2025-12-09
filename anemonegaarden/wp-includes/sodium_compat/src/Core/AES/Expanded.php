@@ -1,2 +1,0 @@
-<?php
- if (class_exists('ParagonIE_Sodium_Core_AES_Expanded', false)) { return; } class ParagonIE_Sodium_Core_AES_Expanded extends ParagonIE_Sodium_Core_AES_KeySchedule { protected $expanded = true; } 

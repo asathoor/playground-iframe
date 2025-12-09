@@ -1,8 +1,0 @@
-<?php
- require_once dirname(dirname(__FILE__)) . '/autoload.php'; foreach (array( 'CRYPTO_AEAD_AESGIS128L_KEYBYTES', 'CRYPTO_AEAD_AESGIS128L_NSECBYTES', 'CRYPTO_AEAD_AESGIS128L_NPUBBYTES', 'CRYPTO_AEAD_AESGIS128L_ABYTES', 'CRYPTO_AEAD_AESGIS256_KEYBYTES', 'CRYPTO_AEAD_AESGIS256_NSECBYTES', 'CRYPTO_AEAD_AESGIS256_NPUBBYTES', 'CRYPTO_AEAD_AESGIS256_ABYTES', ) as $constant ) { if (!defined("SODIUM_$constant") && defined("ParagonIE_Sodium_Compat::$constant")) { define("SODIUM_$constant", constant("ParagonIE_Sodium_Compat::$constant")); } } if (!is_callable('sodium_crypto_aead_aegis128l_decrypt')) { function sodium_crypto_aead_aegis128l_decrypt( $ciphertext, $additional_data, $nonce, #[\SensitiveParameter]
- $key ) { return ParagonIE_Sodium_Compat::crypto_aead_aegis128l_decrypt( $ciphertext, $additional_data, $nonce, $key ); } } if (!is_callable('sodium_crypto_aead_aegis128l_encrypt')) { function sodium_crypto_aead_aegis128l_encrypt( #[\SensitiveParameter]
- $message, $additional_data, $nonce, #[\SensitiveParameter]
- $key ) { return ParagonIE_Sodium_Compat::crypto_aead_aegis128l_encrypt( $message, $additional_data, $nonce, $key ); } } if (!is_callable('sodium_crypto_aead_aegis256_decrypt')) { function sodium_crypto_aead_aegis256_decrypt( $ciphertext, $additional_data, $nonce, #[\SensitiveParameter]
- $key ) { return ParagonIE_Sodium_Compat::crypto_aead_aegis256_decrypt( $ciphertext, $additional_data, $nonce, $key ); } } if (!is_callable('sodium_crypto_aead_aegis256_encrypt')) { function sodium_crypto_aead_aegis256_encrypt( #[\SensitiveParameter]
- $message, $additional_data, $nonce, #[\SensitiveParameter]
- $key ) { return ParagonIE_Sodium_Compat::crypto_aead_aegis256_encrypt( $message, $additional_data, $nonce, $key ); } } 

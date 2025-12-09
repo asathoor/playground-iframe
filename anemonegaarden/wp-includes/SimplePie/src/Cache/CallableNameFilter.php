@@ -1,2 +1,0 @@
-<?php
- declare(strict_types=1); namespace SimplePie\Cache; final class CallableNameFilter implements NameFilter { private $callable; public function __construct(callable $callable) { $this->callable = $callable; } public function filter(string $name): string { return call_user_func($this->callable, $name); } } 

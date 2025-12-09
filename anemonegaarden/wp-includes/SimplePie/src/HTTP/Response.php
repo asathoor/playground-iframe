@@ -1,2 +1,0 @@
-<?php
- declare(strict_types=1); namespace SimplePie\HTTP; interface Response { public function get_permanent_uri(): string; public function get_final_requested_uri(): string; public function get_status_code(): int; public function get_headers(): array; public function has_header(string $name): bool; public function get_header(string $name): array; public function with_header(string $name, $value); public function get_header_line(string $name): string; public function get_body_content(): string; } 

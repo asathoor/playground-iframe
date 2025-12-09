@@ -1,2 +1,0 @@
-<?php
- $wp_version = '6.9'; $wp_db_version = 60717; $tinymce_version = '49110-20250317'; $required_php_version = '7.2.24'; $required_php_extensions = array( 'json', 'hash', ); $required_mysql_version = '5.5.5'; 

@@ -1,2 +1,0 @@
-<?php
- class WP_HTML_Stack_Event { const POP = 'pop'; const PUSH = 'push'; public $token; public $operation; public $provenance; public function __construct( WP_HTML_Token $token, string $operation, string $provenance ) { $this->token = $token; $this->operation = $operation; $this->provenance = $provenance; } } 

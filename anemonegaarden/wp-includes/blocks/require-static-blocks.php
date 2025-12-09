@@ -1,2 +1,0 @@
-<?php
- return array( 'accordion-heading', 'accordion-panel', 'audio', 'buttons', 'code', 'column', 'columns', 'details', 'embed', 'freeform', 'group', 'html', 'list-item', 'math', 'missing', 'more', 'nextpage', 'paragraph', 'preformatted', 'pullquote', 'quote', 'separator', 'social-links', 'spacer', 'table', 'terms-query', 'text-columns', 'verse', ); 

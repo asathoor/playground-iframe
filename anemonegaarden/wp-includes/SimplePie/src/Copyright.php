@@ -1,2 +1,0 @@
-<?php
- declare(strict_types=1); namespace SimplePie; class Copyright { public $url; public $label; public function __construct( ?string $url = null, ?string $label = null ) { $this->url = $url; $this->label = $label; } public function __toString() { return md5(serialize($this)); } public function get_url() { if ($this->url !== null) { return $this->url; } return null; } public function get_attribution() { if ($this->label !== null) { return $this->label; } return null; } } class_alias('SimplePie\Copyright', 'SimplePie_Copyright'); 
