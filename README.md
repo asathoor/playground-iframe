@@ -23,3 +23,13 @@ Playground bruger WebAssembly til at simulere PHP og MySQL direkte i din browser
 ## Kan jeg køre playground i Visual Studio Code
 
 Ja; men her vil jeg anbefale, at du installerer pluginet "WordPress Playground" og åbner den i en lokal mappe. Så kan du programmere dine plugins og temaer.
+
+## Hvorfor åbnes Playground med et JavaScript i index.html?
+
+Man kunne også bruge en `<iframe>`; men på grund af browsernes sikkerhedsindstillinger kan man ikke gemme websitet i et directory. Det gør udviklingsarbejdet unødvendigt bøvlet.
+
+## Kan jeg bruge min playground på en anden computer?
+
+* Eksporter din playground til en fil MIT-PROJEKT.zip
+* Åbn en ny blank Playground.
+* Importer zippen i Playground indstillinger
