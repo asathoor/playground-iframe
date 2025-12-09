@@ -1,0 +1,2 @@
+<?php
+ declare(strict_types=1); namespace SimplePie\Cache; use InvalidArgumentException; interface DataCache { public function get_data(string $key, $default = null); public function set_data(string $key, array $value, ?int $ttl = null): bool; public function delete_data(string $key): bool; } 

@@ -1,0 +1,2 @@
+<?php
+ if ( class_exists( 'SimplePie', false ) ) { return; } require ABSPATH . WPINC . '/SimplePie/autoloader.php'; function wp_simplepie_autoload( $class ) { _deprecated_function( __FUNCTION__, '6.7.0', 'SimplePie_Autoloader' ); } 

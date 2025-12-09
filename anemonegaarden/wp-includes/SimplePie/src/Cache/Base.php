@@ -1,0 +1,2 @@
+<?php
+ declare(strict_types=1); namespace SimplePie\Cache; interface Base { public const TYPE_FEED = 'spc'; public const TYPE_IMAGE = 'spi'; public function __construct(string $location, string $name, $type); public function save($data); public function load(); public function mtime(); public function touch(); public function unlink(); } class_alias('SimplePie\Cache\Base', 'SimplePie_Cache_Base'); 

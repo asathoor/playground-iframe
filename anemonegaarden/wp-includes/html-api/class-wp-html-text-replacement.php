@@ -1,0 +1,2 @@
+<?php
+ class WP_HTML_Text_Replacement { public $start; public $length; public $text; public function __construct( int $start, int $length, string $text ) { $this->start = $start; $this->length = $length; $this->text = $text; } } 

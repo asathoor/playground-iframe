@@ -1,0 +1,2 @@
+<?php
+ declare(strict_types=1); namespace SimplePie; class Rating { public $scheme; public $value; public function __construct( ?string $scheme = null, ?string $value = null ) { $this->scheme = $scheme; $this->value = $value; } public function __toString() { return md5(serialize($this)); } public function get_scheme() { if ($this->scheme !== null) { return $this->scheme; } return null; } public function get_value() { if ($this->value !== null) { return $this->value; } return null; } } class_alias('SimplePie\Rating', 'SimplePie_Rating'); 
