@@ -1,0 +1,12 @@
+{
+"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/wp-admin/site-editor.php?p=%2Fstyles",
+  "plugins": [],
+  "steps": [],
+  "preferredVersions": {
+    "php": "8.4",
+    "wp": "latest"
+  },
+  "features": {},
+  "login": true
+}
