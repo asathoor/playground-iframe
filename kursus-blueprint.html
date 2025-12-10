@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kursus Blueprint</title>
+</head>
+<body>
+    <script>
+        function aabn(landingPage){
+            let bp = {
+                "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+                "landingPage": landingPage,
+                "login": true,
+                "preferredVersions": {
+                    "wp": "latest",
+                    "php": "8.3"
+                },
+                "features": {
+                    "networking": true
+                },
+                "steps": [
+                    {
+                    "step": "importWordPressFiles",
+                    "wordPressFilesZip": {
+                        "resource": "url",
+                        "url": "https://playground.thoth.dk/kursus2026.zip"
+                    }
+                    }
+                ]
+                }
+
+                    let minUrl = JSON.stringify(bp)
+                    location.href = "https://playground.wordpress.net/#" + minUrl
+                }
+
+                aabn("/wp-admin/site-editor.php?p=%2Fstyles")
+    </script>
+</body>
+</html>
