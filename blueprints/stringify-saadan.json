@@ -1,0 +1,16 @@
+// giver en noget pænere url
+
+// objektes gemmes i backticks
+const blueprintJson = `{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"preferredVersions": {
+		"php": "8.3",
+		"wp": "6.5"
+	}
+}`;
+
+// objektet konverteres til en streng
+const minifiedBlueprintJson = JSON.stringify(JSON.parse(blueprintJson)); // {"preferredVersions":{"php":"8.3","wp":"6.5"}}
+
+// så nu kan vi lave en egentlige url
+console.log("https//playground.wordpress.net/#" + minifiedBlueprintJson)

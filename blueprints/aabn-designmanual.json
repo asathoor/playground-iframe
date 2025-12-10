@@ -1,6 +1,6 @@
 {
 "$schema": "https://playground.wordpress.net/blueprint-schema.json",
-  "landingPage": "/wp-admin/site-editor.php?p=%2Fstyles",
+  "landingPage": "/wp-admin/site-editor.php?p=%2Fwp_template%2Ftwentytwentyfive%2F%2Fhome&canvas=edit",
   "plugins": [],
   "steps": [],
   "preferredVersions": {
