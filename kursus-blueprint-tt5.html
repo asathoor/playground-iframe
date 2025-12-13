@@ -27,7 +27,9 @@
                 },
                 "steps": [
                     {
-                        "step": "login"
+                        "step": "login",
+                        "username": "admin",
+                        "password": "password"
                     },
                     {
                         "step": "installPlugin",
@@ -77,6 +79,12 @@
                         },
                         "options": {
                             "activate": true
+                        }
+                    },
+                    {
+                        "step": "setSiteOptions",
+                        "options": {
+                            "blogname": "WordPress Sandkassen"
                         }
                     }
                 ]
